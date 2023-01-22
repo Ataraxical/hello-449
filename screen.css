@@ -1,39 +1,113 @@
 * {
     margin: 0 auto;
-    font-size: 50px;
     background: fff;
     font-family: Arial, Helvetica, sans-serif;
   }
   
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
   body {
     display: flex;
     flex-direction: column;
+    height: auto;
+    margin-top: 8vh;
   }
   
   .row {
-    width: 800px;
+    width: 38%;
+    padding: 10px;
   }
   
   .card {
-    border-style: solid;
-    border-width: 2px;
     border-radius: 15px;
     border-color: #000;
-    background: #ccc;
+    background: #ddd;
     margin: 10px;
+  }
+
+  .card h2 {
+    margin-bottom: 15px;
   }
   
   #row1 {
-    flex: 1 1 auto;
+    color: #424242;
+    flex: 1;
+  }
+
+  
+  #row1 img {
+    margin-left: 15px;
+    margin-right: 15px;
   }
   
   #row2 {
-    flex: 2 1 auto;
+    flex: 1;
   }
   
+  #row2 img {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    object-position: bottom center;
+    border-radius: 15px;
+  }
+
+  #row2card {
+    background: none;
+  }
+
   #row3 {
-    flex: 3 1 auto;
     display: flex;
+    flex: 2;
+  }
+
+  #row3 h2 {
+    padding: 8px;
+  }
+
+  #row3 p {
+    padding: 8px;
+  }
+
+  #row3-card1 {
+    flex: 1;
+    padding: 15px;
+  }
+
+  #row3-card2 {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    flex: 1;
   }
   
+  #row3-card2 .top-half {
+    flex: 1;
+    padding: 15px;
+    margin: 0;
+  }
+
+  #row3-card2 .bottom-half {
+    flex: 3;
+    width: 100%;
+    color: #ddd;
+    background: #424242;
+  }
+
+  #row3-card2 .bottom-half pre {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 150%;
+    padding: 10px;
+    margin-left: 10px;
+  }
   
